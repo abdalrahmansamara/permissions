@@ -18,5 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/posts', include('food_posts.urls'))
+    path('api/v1/posts', include('food_posts.urls')),
+    path("accounts/", include("rest_framework.urls")),
 ]
+# you have an admin access from "accounts" route from now on
